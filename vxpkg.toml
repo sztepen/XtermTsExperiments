@@ -1,0 +1,29 @@
+name = "mochii-ui"
+version = "0.1.1"
+build = """
+npm run build
+rm -rf .vxpkg-bundle/
+mkdir -p .vxpkg-bundle/
+mkdir -p .vxpkg-bundle/assets
+cp dist/mochii.html .vxpkg-bundle/
+cp dist/main.*.js .vxpkg-bundle/assets
+cp -r ui_assets/* .vxpkg-bundle/assets
+"""
+
+artifacts_dir = ".vxpkg-bundle/"
+artifacts = [
+  "mochii.html",
+  "assets/main.*.js",
+  "assets/mochii_logo.png",
+  "assets/bootstrap.min.css",
+  "assets/bootstrap.min.js",
+  "assets/jquery-3.2.1.slim.min.js",
+  "assets/popper.min.js",
+]
+
+[defs]
+html = "mochii.html"
+assets = "assets"
+
+[dev_deps]
+npm = "^3.10.10"

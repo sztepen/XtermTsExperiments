@@ -1,0 +1,26 @@
+{
+  "name": "xterm-tester",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "sh scripts/serve.sh",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@types/d3": "^4.13.1",
+    "@types/jquery": "^3.3.27",
+    "@types/xterm": "^3.0.0",
+    "css-loader": "^2.0.1",
+    "d3": "^4.11.0",
+    "jquery": "^3.3.1",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^0.23.1",
+    "yarn": "^1.12.3"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^3.2.2",
+    "webpack": "^3.10.0"
+  }
+}

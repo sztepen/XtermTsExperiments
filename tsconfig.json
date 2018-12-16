@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "target": "es5",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./dist",
+        "sourceMap": true
+    },
+    "include": [
+        "ts/**/*"
+    ],
+    "rootDirs": [
+        "node_modules/"
+    ]
+}
