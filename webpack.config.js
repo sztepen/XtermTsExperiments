@@ -19,7 +19,7 @@ const config = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[hash].bundle.js",
-        library: "voxa_test",
+        library: "console_test",
         publicPath: "/"
     },
     module: {
